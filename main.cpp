@@ -4,6 +4,7 @@
 #include <iostream>
 #include <locale.h>
 #include <windows.h>
+#include "student1.h"
 #include "student2.h"
 using namespace std;
 
@@ -14,8 +15,10 @@ int main() {
     int choice;
     do {
         cout << "\nКомандный проект: сборник расчётов\n";
-        cout << "1. Площадь сектора\n";
-        cout << "2. Длина дуги\n";
+        cout << "1 - Площадь сектора\n";
+        cout << "2 - Длина дуги\n";
+        cout << "3 - Факториал n!\n";
+        cout << "4 - Двойной факториал n!!\n";
         cout << "0 - Выход\n";
         cout << "Выберите пункт: ";
         cin >> choice;
@@ -42,8 +45,30 @@ int main() {
                     cout << "Ошибка: радиус не может быть отрицательным.\n";
                } else {
                     cout << "Длина дуги = " << arcLength(r, alpha) << "\n";
+                }
+                break;
             }
-            break;
+            case 3: {
+                int n;
+                cout << "Введите n (0 <= n <= 20): ";
+                cin >> n;
+                if (n < 0 || n > 20) {
+                    cout << "Ошибка: n должно быть от 0 до 20.\n";
+                } else {
+                    cout << "n! = " << factorial(n) << "\n";
+                }
+                break;
+            }
+            case 4: {
+                int n;
+                cout << "Введите n (0 <= n <= 20): ";
+                cin >> n;
+                if (n < 0 || n > 20) {
+                    cout << "Ошибка: n должно быть от 0 до 20.\n";
+                } else {
+                    cout << "n!! = " << doubleFactorial(n) << "\n";
+                }
+                break;
             }
             default:
                 cout << "Такого пункта нет.\n";
