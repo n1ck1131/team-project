@@ -1,0 +1,51 @@
+# C++ — артефакты сборки
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+*.pdb
+*.idb
+*.ilk
+build/
+Build/
+bin/
+Bin/
+obj/
+Obj/
+out/
+Out/
+Debug/
+Release/
+x64/
+x86/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Логи
+*.log
+logs/
+tmp/
+temp/
